@@ -1,0 +1,99 @@
+$brand-color: #01579b;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.card{
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+//Card-top
+
+.product-img{
+    align-self: center;
+    padding: 10px;
+    width: 250px;
+}
+
+h5{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+//Card Bottom
+
+.card-bottom{
+    display: flex;
+    border-top: solid rgba(1, 87, 155, 0.1) ;
+    justify-content: space-around ;
+    height: 3.5rem;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.brand-logo img{
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px 30px;
+}
+
+  
+.share{
+    padding: 10px 30px;
+}
+
+.brand-logo, .share, .price{
+    width: 33%;
+    color: $brand-color;
+}
+
+.brand-logo{
+    align-self: center;
+    
+}
+
+.price{
+    text-align: center;
+    line-height: 2px;
+    border-right: solid rgba(1, 87, 155, 0.1);
+    border-left: solid rgba(1, 87, 155, 0.1);
+}
+
+//Expired
+.expired{
+    width: 33%; 
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0px 0px 12px 0px;
+    background-color: #DC3545 
+
+}
+
+//Percentage discount
+.percent {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: white;
+    border-radius: 0px 5px 0px 5px;
+  
+    background-color: $brand-color;
+    padding: 0px 10px;
+  }
+
+
+//Card hover
+.card:hover {
+    cursor: pointer;
+    
+    box-shadow: 0 8px 16px 0 rgba(1,87,155,0.3);
+}
